@@ -20,18 +20,24 @@ h1
 .form-group
 {
     width: 70vh;
-    margin-left: 25vh;
+    margin-top: 2%;
+}
+
+.form
+{
+    margin-left: 20%;
 }
 
 .container
 {
     opacity: 0.8;
+    
 }
 
 img
 {
-    width: 70vh;
-    margin-left: 2vh;
+    width: 65%;
+    margin-left: 10%;
 }
 
 footer
