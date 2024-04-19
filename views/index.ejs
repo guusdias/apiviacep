@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <!--Bootstrap-->
+  <link rel="icon" href="images/animated-icons-16-svgrepo-com.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="/css/styles.css">
+  <title>Consulte CEP</title>
+</head>
+
+<body class="p-3 mb-2 bg-dark text-white"></body>
+<h1>RECEBA A TRANSIÇÃO</h1>
+<div class="row">
+  <div class="col-lg-6 container">
+    <form action="/transfer" method="post" class="form" id="csrfForm">
+      <div class="form-group">
+        <label for="cep">CEP</label>
+        <input type="text" class="form-control" placeholder="01001-000" name="cep" maxlength="9" id="cep">
+        <!-- <small>00000-00</small> -->
+      </div>
+      <div class="form-group">
+        <label for="logradouro">Logradouro</label>
+        <input type="text" class="form-control" placeholder="Praça da Sé" name="logradouro" id="logradouro">
+        <!-- <small>Rua</small> -->
+      </div>
+      <div class="form-group">
+        <label for="bairro">Bairro</label>
+        <input type="text" class="form-control" placeholder="Sé" name="bairro" id="bairro">
+        <!-- <small>Bairro</small> -->
+      </div>
+      <div class="form-group">
+        <label for="localidade">Localidade</label>
+        <input type="text" class="form-control" placeholder="São Paulo" name="localidade" id="localidade">
+        <!-- <small>Cidade</small> -->
+      </div>
+      <div class="form-group">
+        <label for="uf">UF</label>
+        <input type="text" class="form-control" placeholder="SP" name="uf" id="uf">
+        <!-- <small>Estado</small> -->
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF</label>
+        <input type="text" class="form-control" placeholder="CPF" name="cpf" id="cpf">
+        <!-- <small>Estado</small> -->
+      </div>
+      <div class="form-group">
+        <label for="nome">N. da Conta</label>
+        <input type="text" class="form-control" placeholder="Número da Conta" name="card" id="card">
+        <!-- <small>Estado</small> -->
+      </div>
+      <button type="submit" class="btn btn-warning" style="width: 10rem;">Receber em casa!</button>
+    </form>
+
+  </div>
+  <div class="col-lg-6">
+    <img src="/assets/animated-icons-16-svgrepo-com.svg" alt="world">
+  </div>
+</div>
+<footer class="p-3 mb-2 text-white">Gustavo Dias</footer>
+<script src="/js/index.js"></script>
+</body>
+
+</html>

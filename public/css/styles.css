@@ -1,60 +1,54 @@
-body
-{
+body {
     margin-bottom: 0vh;
     padding-bottom: 0%;
     border: 0vh;
 }
-.row
-{
+
+.row {
     padding: 5vh, 5vh, 0vh, 5vh;
-    
 }
 
-h1
-{
+h1 {
     font-family: 'Playfair Display', serif;
     text-align: center;
     margin: 6vh;
 }
 
-.form-group
-{
+.form-group {
     width: 85%;
-    margin-top: 2%;
 }
 
-.form
-{
+.form {
     margin-left: 20%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.container
-{
+.container {
     opacity: 0.8;
-    
+
 }
 
-img
-{
+img {
     width: 65%;
     margin-left: 10%;
 }
 
-footer
-{
+footer {
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
 
-@media (max-width: 900px){
-    img{
-    margin-top: 10%;
-    width: 65%;
-    margin-left: 20%;
+@media (max-width: 900px) {
+    img {
+        margin-top: 10%;
+        width: 65%;
+        margin-left: 20%;
     }
 
-    .form-group{
-    width: 85%;
-    margin-top: 2%;
+    .form-group {
+        width: 85%;
+        margin-top: 2%;
     }
-}  
+}
