@@ -1,6 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const _ = require("lodash");
 
 const ejs = require("ejs");
 
@@ -17,17 +16,20 @@ app.get("/", function (req, res) {
   res.render("index");
 });
 
-app.post("/", (req, res) => {
-  res.render("transfer");
-  const csrfToken = req.headers["x-csrf-token"];
+app.post("/transfer", (req, res) => {
+  const csrfToken = req.body.csrfToken;
 
-  if (csrfToken !== req.body.csrfToken) {
-    return res.status(403).send("Invalid CSRF token");
+  console.log(csrfToken);
+  console.log(req.headers["x-csrf-token"]);
+  console.log("Form Data:", req.body);
+
+  if (csrfToken !== req.headers["x-csrf-token"]) {
+    return res.status(403).json("Invalid CSRF token");
   }
 
   console.log("Form Data:", req.body);
 
-  res.status(200).send("Form submitted successfully!");
+  res.status(200).json("Form submitted successfully!");
 });
 
 app.listen(port, () => {

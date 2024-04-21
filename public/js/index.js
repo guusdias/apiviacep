@@ -24,7 +24,6 @@ cep.addEventListener("blur", (e) => {
 });
 
 //CSRF
-
 function generateCSRFToken() {
   return Math.random().toString(36).substring(2);
 }
@@ -37,8 +36,6 @@ document
     event.preventDefault();
 
     let formData = new FormData(this);
-
-    console.log(formData);
 
     fetch("http://localhost:3000/transfer", {
       method: "POST",
